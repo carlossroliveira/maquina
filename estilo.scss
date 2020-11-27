@@ -1,20 +1,23 @@
 body {
     background-color: #212121;
-    max-width: 1200px;
-    margin: 0 auto;
-
     .divPrincipal {
         color: #fff;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            max-width: 50%;
+        }
 
         .titulo-p::after {
-            content: '|';
+            content: "|";
             margin-left: 5px;
             opacity: 1;
-            animation: pisca .7s infinite;
+            animation: pisca 0.7s infinite;
         }
 
         @keyframes pisca {
-
             0% {
                 opacity: 1;
             }
